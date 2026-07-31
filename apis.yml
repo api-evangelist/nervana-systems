@@ -1,7 +1,27 @@
 aid: nervana-systems
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nervana-systems.png
 name: Nervana Systems
-description: Nervana Systems is a company surfaced as a portfolio company of dcvc and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nervana Systems was a deep-learning and AI-hardware startup founded in 2014 (founders Naveen
+  Rao, Amir Khosrowshahi, and Arjun Bansal) that built the open-source "neon" deep-learning
+  framework and a custom AI training ASIC (the Nervana Engine). Backed by DCVC (Data Collective)
+  and others, the company was acquired by Intel in August 2016 and folded into Intel's AI effort,
+  where its work became the Intel Nervana Neural Network Processor (NNP-T / NNP-I); Intel wound
+  that product line down in early 2020 following its Habana Labs acquisition. Nervana Systems no
+  longer exists as an independent entity and publishes no live developer surface: its primary
+  domains (nervanasys.com, nervana.com, nervanasystems.com) no longer resolve, and it is not
+  present in the APIs.io catalog. This profile is retained as a historical VC-portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/nervana-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,37 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-detail: >-
+  Acquired by Intel (Aug 2016) and dissolved as an independent company; the Intel Nervana NNP
+  product line was cancelled in early 2020. No live web or API surface remains.
+x-probe:
+  date: '2026-07-20'
+  domains_checked:
+  - {domain: nervanasys.com, dns: unresolved, http: null}
+  - {domain: nervana.com, dns: unresolved, http: null}
+  - {domain: nervanasystems.com, dns: unresolved, http: null}
+  apis_io_catalog: not-found
+  api_surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- AI Hardware
+- Semiconductors
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
